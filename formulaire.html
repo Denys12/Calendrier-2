@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="./Les formulaires_files/jquery-ui.css">
+	<meta lang="fr">
+	<script src="./Les formulaires_files/jquery-1.12.4.js"></script>
+  	<script src="./Les formulaires_files/jquery-ui.js"></script>
+	<script>
+  	$( function() {
+    	$( "#datepicker" ).datepicker();
+  	} );
+  	</script>
+	<title>Calendrier 2018-2019</title>
+</head>
+	<body class="Responsive" background="http://www-master.ufr-info-p6.jussieu.fr/lmd/specialite/itin/images/Logo%20Itescia%20petit.jpg">
+	<div id="Container_Calendrier">
+	<h1 class="Responsive">Calendrier Coding 2018-2019</h1>
+	</div>
+	<section class="Responsive">
+		<img src="https://pbs.twimg.com/profile_images/809794495931936768/MWp556Oe_400x400.jpg"">
+	<h2 id="left"><a id="accueil" href="index.html">Accueil</a></h2>
+		<form id="formulaire" action="index.html" method="get">
+			<div>
+				<label for="Date">Date:  </label>
+				<input type=""" name="" id="datepicker" />
+			</div>
+			<div>
+				<label for="Jour"> Ajouter un titre </label>
+				<input type="text" name="text" id="text">
+			</div>
+			<br>
+			<div id="Container_Evenement">
+				<label for="Evenement"> Evenement: </label>
+			</div>
+				<br>
+			<div id="Container_Anniversaire">
+				<input type="checkbox" name="Anniversaire" id="Anniversaire">
+				Anniversaire 
+			</div>
+				<br>
+			<div id="Container_Entretient">
+				<input type="checkbox" name="Entretient" id="Entretient">
+				Entretient
+			</div>
+				<br>
+			<div id="Container_Rappel">
+				<input type="checkbox" name="Rappel" id="Rappel">
+				Rappel
+			</div>
+				<br>
+				<label for="Heure"> Heure </label>
+					<select name="Heure" id="Heure">
+						<option value=""> </option>
+						<option value="00h">00h </option>
+						<option value="01h">01h </option>
+						<option value="02h">02h </option>
+						<option value="03h">03h </option>
+						<option value="04h">04h </option>
+						<option value="05h">05h </option>
+						<option value="06h">06h </option>
+						<option value="07h">07h </option>
+						<option value="08h">08h </option>
+						<option value="09h">09h </option>
+						<option value="10h">10h </option>
+						<option value="11h">11h </option>
+						<option value="12h">12h </option>
+						<option value="13h">13h </option>
+						<option value="14h">14h </option>
+						<option value="15h">15h </option>
+						<option value="16h">16h </option>
+						<option value="17h">17h </option>
+						<option value="18h">18h </option>
+						<option value="19h">19h </option>
+						<option value="20h">20h </option>
+						<option value="21h">21h </option>
+						<option value="22h">22h </option>
+						<option value="23h">23h </option>
+					</select>
+					<label for="Minute"> Minute </label>
+					<select name="Minute" id="Minute">
+						<option value=""> </option>
+						<option value="00">00 </option>
+						<option value="10">10 </option>
+						<option value="20">20 </option>
+						<option value="30">30 </option>
+						<option value="40">40 </option>		
+						<option value="50">50 </option>
+					</select>
+					<label for=""></label>
+					<br>
+					<input type="submit" name="send" value="envoyer">
+			</div>
+		</form>
+	</section>
+	</body>
+</html>
